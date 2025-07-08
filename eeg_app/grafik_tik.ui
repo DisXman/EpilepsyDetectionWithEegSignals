@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>684</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="animated">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>EEG verisini grafikte görmek için CSV formatındaki veriyi alttaki butona tıklayarak yükleyiniz.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>(İncelemek istediğiniz kanalı seçiniz.)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_grafik_goster">
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Grafik Göster</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox_kanal">
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>Hepsi</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AF3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AF4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>F3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>F4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>F7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>F8</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FC5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FC6</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>O1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>O2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>P7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>P8</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>T7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>T8</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_csv_sec">
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CSV yükle</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="stft_buton">
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>FFT Grafiği Göster</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_path">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Yüklenecek Dosya: </string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>684</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDosya_A">
+    <property name="title">
+     <string>Dosya Aç</string>
+    </property>
+   </widget>
+   <addaction name="menuDosya_A"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
